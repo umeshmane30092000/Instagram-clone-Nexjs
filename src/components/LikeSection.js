@@ -11,7 +11,7 @@ import {
 import { useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';
 import { HiOutlineHeart, HiHeart } from 'react-icons/hi';
-import { app } from '../firebase';
+import { app } from '@/firebase';
 
 export default function LikeSection({ id }) {
   const { data: session } = useSession();
